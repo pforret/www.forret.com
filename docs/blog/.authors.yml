@@ -1,0 +1,7 @@
+# Blog authors: reference them in a post's front matter with `authors: [<id>]`
+# https://zensical.org/docs/setup/blog/#adding-authors
+authors:
+  pforret:
+    name: "pforret"
+    description: "Author"
+    avatar: https://github.com/pforret.png

@@ -1,21 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>www.forret.test/</loc>
+        <loc>https://www.forret.test/</loc>
       </url>
       <url>
-        <loc>www.forret.test/about/</loc>
+        <loc>https://www.forret.test/about/</loc>
       </url>
       <url>
-        <loc>www.forret.test/blog/</loc>
+        <loc>https://www.forret.test/about/features/extensions/</loc>
       </url>
       <url>
-        <loc>www.forret.test/blog/posts/2024-01-post1/</loc>
+        <loc>https://www.forret.test/about/features/plugins/</loc>
       </url>
       <url>
-        <loc>www.forret.test/blog/posts/2024-02-post2/</loc>
+        <loc>https://www.forret.test/blog/</loc>
       </url>
       <url>
-        <loc>www.forret.test/todo/zz-exclude-test/</loc>
+        <loc>https://www.forret.test/blog/2024/01/first-post/</loc>
+      </url>
+      <url>
+        <loc>https://www.forret.test/blog/2024/02/second-post/</loc>
+      </url>
+      <url>
+        <loc>https://www.forret.test/blog/2024/03/draft-post/</loc>
+      </url>
+      <url>
+        <loc>https://www.forret.test/blog/archive/2024/</loc>
+      </url>
+      <url>
+        <loc>https://www.forret.test/blog/category/content/</loc>
+      </url>
+      <url>
+        <loc>https://www.forret.test/blog/category/fake/</loc>
+      </url>
+      <url>
+        <loc>https://www.forret.test/tags/</loc>
       </url>
 </urlset>
