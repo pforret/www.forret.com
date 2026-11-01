@@ -2,6 +2,6 @@
 # https://zensical.org/docs/setup/blog/#adding-authors
 authors:
   pforret:
-    name: "pforret"
-    description: "Author"
+    name: "Peter Forret"
+    description: "CTO, software architect, founder of DCProof"
     avatar: https://github.com/pforret.png

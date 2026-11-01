@@ -1,6 +1,4 @@
-This favicon was generated from Twemoji (jdecked fork):
+These icons are copied from https://blog.forret.com/ (the "pf" logo):
 
-- Source: https://github.com/jdecked/twemoji
-- Glyph: 1f4f0.svg (newspaper)
-- License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
-- Attribution: Copyright Twitter, Inc and other contributors, maintained by jdecked/twemoji
+- favicon.ico and apple-touch-icon.png (180x180) are the originals from /public/
+- favicon-16x16, favicon-32x32, android-chrome-192x192 and android-chrome-512x512 are resized from apple-touch-icon.png with sips
