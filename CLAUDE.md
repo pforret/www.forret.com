@@ -32,6 +32,7 @@ The site is built locally, not in CI. `mkdox2 build` writes the HTML to `site/`,
 - `.github/workflows/pages.yml` runs on every push to `main` that changes `site/**` (it can also be started by hand). It uploads `site/` unchanged to GitHub Pages. The Pages source is set to "GitHub Actions". Never add a build step there.
 - Because `mkdox2 build` commits and pushes, **every build publishes the site**. For a test build that doesn't commit, use the plain `docker run ... build` command shown above.
 - Pushing changes to `docs/` without rebuilding publishes nothing new. Rebuild first.
+- **`.gitignore` must never contain `site/`.** mkdox2 template regenerations add that line. New built files (CSS/JS bundles, fonts, new pages) are then silently left out of commits, and the live site breaks (it renders unstyled and new pages return 404). Check `.gitignore` after every mkdox2 upgrade.
 - Public URL: `https://www.forret.com/`, which is also `site_url` in `zensical.toml`. The repo is `pforret/www.forret.com` and its fallback address is `https://pforret.github.io/www.forret.com/`.
 - Custom domain, a one-time setup: DNS is at Gandi, with a `www` CNAME pointing to `pforret.github.io.`. Then run `gh api -X PUT repos/pforret/www.forret.com/pages -f cname=www.forret.com` and enforce HTTPS in the Pages settings. With deploys from Actions, a `CNAME` file in `site/` is ignored.
 
