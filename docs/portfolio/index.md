@@ -36,6 +36,15 @@ Products I founded, and the open-source tools I build along the way.
 
     [:octicons-arrow-right-24: Read more](bashew.md)
 
+-   :material-newspaper:{ .lg .middle } **blog.forret.com**
+
+    ---
+
+    My personal blog since 2004: technology, photography and tango,
+    side projects and AI-assisted software development.
+
+    [:octicons-arrow-right-24: Read more](blog.md)
+
 -   :material-github:{ .lg .middle } **Open source**
 
     ---

@@ -2,4 +2,4 @@
 
 | ID | T | S | Title |
 |----|---|---|-------|
-| B1  | ✨ | 🟢 | [Add a README.md with a screenshot](2026-11-01.feature.add-readme-with-screenshot.md) |
+| B1  | ✨ | 🟡 | [Add blog.forret.com to the portfolio, with quotes and popular posts](2026-11-01.feature.add-blog-forret-portfolio-page.md) |

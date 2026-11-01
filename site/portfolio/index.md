@@ -17,6 +17,11 @@ Products I founded, and the open-source tools I build along the way.
   ---
 
   Bash script micro-framework: from a small stand-alone script to a complete project with CI/CD and testing. My most popular open-source project.
+- **blog.forret.com**
+
+  ---
+
+  My personal blog since 2004: technology, photography and tango, side projects and AI-assisted software development.
 - **Open source**
 
   ---

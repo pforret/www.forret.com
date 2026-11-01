@@ -18,6 +18,7 @@ nav = [
     "portfolio/dcproof.md",
     "portfolio/toolstudio.md",
     "portfolio/bashew.md",
+    "portfolio/blog.md",
     "portfolio/opensource.md",
   ] },
   { "About" = [

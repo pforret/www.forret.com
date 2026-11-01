@@ -12,6 +12,7 @@
 ## Portfolio
 
 - [bashew](<https://www.forret.com/portfolio/bashew/index.md>)
+- [blog.forret.com](<https://www.forret.com/portfolio/blog/index.md>)
 - [DCProof](<https://www.forret.com/portfolio/dcproof/index.md>)
 - [Portfolio](<https://www.forret.com/portfolio/index.md>)
 - [Open source](<https://www.forret.com/portfolio/opensource/index.md>)
