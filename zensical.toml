@@ -4,7 +4,7 @@
 # hand-tuned: site identity (see CLAUDE.md, "Hand-tuned settings")
 site_name = "Peter Forret"
 site_url = "https://www.forret.com/"
-site_description = "Tech consultant and entrepreneur — founder of DCProof and toolstud.io, maker of open-source Bash tools"
+site_description = "Tech consultant and entrepreneur — founder of DCProof and toolstud.io"
 site_author = "Peter Forret"
 # no repo_url/repo_name: the header must not show the pforret/www.forret.com repo link (user request)
 copyright = "© 2004–2026 Peter Forret"

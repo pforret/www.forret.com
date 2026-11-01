@@ -37,19 +37,32 @@ The site is built locally, not in CI. `mkdox2 build` writes the HTML to `site/`,
 
 ## Structure
 
-- `zensical.toml`: the whole site config (TOML, under the `[project]` table, not `mkdocs.yml`). It holds the theme (`material`, red palette, Nunito font), the enabled Markdown extensions (admonitions, tabs, details, Mermaid via superfences, emoji, snippets, task lists) and the plugins (`search`, `awesome-pages`, `blog`, `rss`).
-- `docs/`: the content root. Each top-level folder becomes a navigation tab (`navigation.tabs`). Navigation is built from the folder layout. Because of `awesome-pages`, a `.pages` file in a folder can set the order and titles.
+- `zensical.toml`: the whole site config (TOML, under the `[project]` table, not `mkdocs.yml`). It holds the theme (`material`, a vintage editorial look via `docs/stylesheets/extra.css` with a light/dark toggle, Fraunces, Work Sans and JetBrains Mono), the enabled Markdown extensions (admonitions, tabs, details, Mermaid via superfences, emoji, snippets, task lists) and the plugins (`search`, `llmstxt`, `tags`, `glightbox`, `privacy`, `minify`, `social`, `callouts`, `blog`, `rss`), as well as `nav` and `exclude_docs`.
+- `docs/`: the content root. Each top-level section in `nav` becomes a navigation tab (`navigation.tabs`).
 - `docs/todo/`: internal todo tracking. It is listed in `exclude_docs` in `zensical.toml`, so it is never rendered into `site/`. Put any other private folder in that same list.
+- `docs/about/`: `index.md` (bio and photo `img/peter.jpg`, the GitHub avatar), `cv.md` (experience, side projects, education) and `timeline.md` (a Markdown list inside `<div class="timeline" markdown>`, styled by the timeline block in `extra.css`). The content comes from https://cv.forret.com/ plus LinkedIn posts. **Privacy:** never publish the full birth date, family details or MBTI from the CV.
+- `docs/portfolio/`: overview cards and flagship pages (DCProof, toolstud.io, bashew). `opensource.md` is **generated**, so don't edit it: run `scripts/portfolio_repos.sh` (needs `gh` and `jq`) to refresh it from GitHub (non-fork, non-archived repos with ≥ 5★). Theme groups are mapped in the script, and repos not in the map appear under "Other".
+- Tab order comes from the `nav` list in `zensical.toml`; the awesome-pages plugin is not installed, so `.pages` files do nothing. A new page or section has to be added to `nav`, or it won't appear in the navigation.
+- `scripts/`: helper scripts. This folder sits outside `docs/`, so nothing in it is published.
 - `docs/blog/`: the blog plugin root. Posts go in `docs/blog/posts/YYYY-MM-slug.md` with `title`, `date` and `categories` frontmatter, and a `<!-- more -->` excerpt marker. Post URLs use the `yyyy/MM` date format, and the RSS feed is built from `blog/posts/`.
-- `docs/overrides/`: theme overrides (`custom_dir`). `main.html` sets the announcement bar, and `partials/integrations/analytics/custom.html` holds the custom analytics snippet (`extra.analytics.provider = "custom"`).
+- `docs/overrides/`: theme overrides (`custom_dir`). `main.html` only extends `base.html` (no announcement bar). `partials/integrations/analytics/custom.html` loads Simple Analytics, which is cookieless (`extra.analytics.provider = "custom"`), so there is deliberately no cookie consent banner.
+- `docs/stylesheets/extra.css`: the vintage editorial theme (inspired by designmd.app/library/vintage-editorial): cream, ink and warm-brown variables for the `default` and `slate` schemes, Work Sans UI chrome, a heading rule and dot, bordered cards and CTA buttons, an ink footer. The `--md-footer-*` variables must be set on `.md-footer`/`.md-footer-meta` themselves, because the theme's palette CSS overrides them at scheme level.
 - `docs/icon/`: the favicon and logo assets that `zensical.toml` points to.
 - `site/`: build output. Don't edit it by hand, regenerate it with `mkdox2 build`. It **is committed on purpose**: the HTML is built locally and GitHub serves `site/` as the live website. After any content change, run `mkdox2 build` and commit both `docs/` and `site/` together, so the published site never falls behind the sources.
 
+## Hand-tuned settings in `zensical.toml`
+
+mkdox2 upgrades can regenerate `zensical.toml`; one already dropped `exclude_docs`. Every block marked `# hand-tuned:` in the file must survive such a regeneration. Check this list after any upgrade:
+- Identity: `site_name`, `site_description`, `site_author` and `copyright` (Peter Forret, © 2004–2026). There is deliberately **no** `repo_url`/`repo_name`, so the header shows no repo link.
+- `nav` (tab order: Home, Portfolio, About, Blog; `tags.md` is deliberately left out of the menu) and `exclude_docs` (`/todo/`).
+- `features`: portfolio-style. These are on: `navigation.indexes`, `navigation.top`, `navigation.footer` and `toc.follow`. These are deliberately off: `header.autohide`, `toc.integrate`, `navigation.integrate`, `content.action.copy` and `announce.dismiss`.
+- `[[project.theme.palette]]`: `primary`/`accent = "custom"` with light and dark entries and a toggle. The real colours are in `docs/stylesheets/extra.css` (`extra_css`).
+- `theme.font`: `text = "Fraunces"`, `code = "JetBrains Mono"`. Work Sans for the UI is imported in `extra.css`; the privacy plugin self-hosts all three.
+- `[[project.extra.social]]`: LinkedIn (`/in/peterforret`), GitHub, the blog, X and YouTube.
+- `[project.extra.analytics] provider = "custom"` with no `[project.extra.consent]` block.
+- The `"Portfolio"` section under `[project.plugins.llmstxt.sections]`.
+
 ## Leftover scaffold content to replace
 
-The project was just scaffolded with `mkdox2 new`, and these placeholders still need replacing:
-- In `zensical.toml`: `site_name`, `site_url` (`www.forret.test`), `site_description` and `copyright` are generic. The repo icon is set to Bitbucket.
-- `docs/index.md` describes a different project (`oil-crisis-monitor`) and links to `about/features/*.md`, which doesn't exist.
-- `docs/overrides/main.html`: the announcement still contains the literal `{SITE_NAME}`.
-- `docs/blog/posts/2024-0*-post*.md` are lorem-ipsum placeholder posts.
-- `docs/about/index.md` is empty. It is the natural home for the CV and career overview, or you can add sibling sections such as `docs/portfolio/` and `docs/cv/`.
+- `docs/blog/posts/2024-0*-post*.md` are lorem-ipsum placeholder posts (now marked as drafts).
+- `docs/about/index.md` is still a placeholder. It is reserved for the bio, CV and career overview (a separate todo item).

@@ -1,0 +1,420 @@
+/* ==========================================================================
+   Vintage editorial theme for www.forret.com
+   Inspired by https://designmd.app/library/vintage-editorial
+   - cream paper, near-black ink (never pure black), warm brown accents
+   - Fraunces (serif, via theme.font.text) for reading and headings,
+     Work Sans for UI chrome, JetBrains Mono (theme.font.code) for code
+   - decoration only from simple CSS shapes: rules, dots, bordered boxes
+   ========================================================================== */
+
+@import url("../assets/external/fonts.googleapis.com/css2.b2affce3.css");
+
+:root {
+  --ed-cream: #f5f3ee;
+  --ed-cream-light: #faf8f4;
+  --ed-ink: #1a1a1a;
+  --ed-ink-soft: #555555;
+  --ed-warm: #e8d4c0;
+  --ed-brown: #c4a882;
+  --ed-brown-dark: #8a6d4b;
+  --ed-ui-font: "Work Sans", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --ed-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---- light: cream paper ------------------------------------------------- */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: var(--ed-cream);
+  --md-default-fg-color: var(--ed-ink);
+  --md-default-fg-color--light: var(--ed-ink-soft);
+  --md-default-fg-color--lighter: rgba(26, 26, 26, 0.32);
+  --md-default-fg-color--lightest: rgba(26, 26, 26, 0.12);
+
+  --md-primary-fg-color: var(--ed-cream);
+  --md-primary-fg-color--light: var(--ed-cream-light);
+  --md-primary-fg-color--dark: var(--ed-warm);
+  --md-primary-bg-color: var(--ed-ink);
+  --md-primary-bg-color--light: var(--ed-ink-soft);
+
+  --md-accent-fg-color: var(--ed-brown-dark);
+  --md-accent-fg-color--transparent: rgba(196, 168, 130, 0.18);
+  --md-accent-bg-color: var(--ed-cream-light);
+
+  --md-typeset-color: var(--ed-ink);
+  --md-typeset-a-color: var(--ed-ink);
+  --md-typeset-mark-color: rgba(232, 212, 192, 0.7);
+  --md-code-bg-color: var(--ed-cream-light);
+  --md-code-fg-color: var(--ed-ink);
+
+  --md-footer-bg-color: var(--ed-ink);
+  --md-footer-bg-color--dark: #111111;
+  --md-footer-fg-color: var(--ed-cream);
+  --md-footer-fg-color--light: rgba(245, 243, 238, 0.7);
+  --md-footer-fg-color--lighter: rgba(245, 243, 238, 0.45);
+
+  --ed-surface: var(--ed-cream-light);
+  --ed-rule: var(--ed-ink);
+  --ed-link-underline: var(--ed-brown);
+}
+
+/* ---- dark: ink paper, cream type (same palette, inverted) ------------- */
+[data-md-color-scheme="slate"] {
+  --md-hue: 35;
+  --md-default-bg-color: #1a1a1a;
+  --md-default-fg-color: var(--ed-cream);
+  --md-default-fg-color--light: #c9c3b8;
+  --md-default-fg-color--lighter: rgba(245, 243, 238, 0.32);
+  --md-default-fg-color--lightest: rgba(245, 243, 238, 0.12);
+
+  --md-primary-fg-color: #1a1a1a;
+  --md-primary-fg-color--light: #242220;
+  --md-primary-fg-color--dark: #111111;
+  --md-primary-bg-color: var(--ed-cream);
+  --md-primary-bg-color--light: #c9c3b8;
+
+  --md-accent-fg-color: var(--ed-brown);
+  --md-accent-fg-color--transparent: rgba(196, 168, 130, 0.16);
+  --md-accent-bg-color: #1a1a1a;
+
+  --md-typeset-color: var(--ed-cream);
+  --md-typeset-a-color: var(--ed-cream);
+  --md-typeset-mark-color: rgba(196, 168, 130, 0.35);
+  --md-code-bg-color: #242220;
+  --md-code-fg-color: var(--ed-cream);
+
+  --md-footer-bg-color: #111111;
+  --md-footer-bg-color--dark: #0b0b0b;
+
+  --ed-surface: #22201d;
+  --ed-rule: var(--ed-cream);
+  --ed-link-underline: var(--ed-brown-dark);
+}
+
+/* ---- typography --------------------------------------------------------- */
+.md-typeset {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  font-variation-settings: "opsz" 14;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: var(--md-default-fg-color);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  font-variation-settings: "opsz" 144;
+}
+
+.md-typeset h1 {
+  font-size: clamp(2rem, 4.5vw, 2.8rem);
+  margin-bottom: 1.6rem;
+}
+
+/* signature rule under every page title: 80px x 2px */
+.md-typeset h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  margin-top: 0.9rem;
+  background: var(--ed-rule);
+}
+
+.md-typeset h2 {
+  font-size: 1.45rem;
+  margin-top: 2.4rem;
+}
+
+/* small dot before section headings (not when the heading already has an icon) */
+.md-typeset h2::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: var(--ed-rule);
+}
+
+.md-typeset h2:has(.twemoji)::before {
+  display: none;
+}
+
+/* keep reading lines comfortable */
+.md-typeset > p,
+.md-typeset > ul,
+.md-typeset > ol,
+.md-typeset > dl {
+  max-width: 72ch;
+}
+
+/* links: ink text, warm underline */
+.md-typeset a {
+  text-decoration: underline;
+  text-decoration-color: var(--ed-link-underline);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.18em;
+  transition: color 200ms var(--ed-ease), text-decoration-color 200ms var(--ed-ease);
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus {
+  color: var(--md-accent-fg-color);
+  text-decoration-color: currentColor;
+}
+
+/* headerlinks and icons should not be underlined */
+.md-typeset a.headerlink,
+.md-typeset .md-button {
+  text-decoration: none;
+}
+
+/* ---- UI chrome in Work Sans -------------------------------------------- */
+.md-header,
+.md-tabs,
+.md-nav,
+.md-footer,
+.md-search,
+.md-source,
+.md-typeset .md-button,
+.md-typeset .grid.cards > ul > li > p:first-child,
+.md-typeset dt,
+.md-typeset table:not([class]) th {
+  font-family: var(--ed-ui-font);
+}
+
+/* header: paper, not a coloured bar; thin ink rule below */
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-header__topic:first-child {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.md-tabs {
+  border-bottom: 2px solid var(--ed-rule);
+}
+
+.md-tabs__link {
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.md-tabs__item--active .md-tabs__link {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.md-nav__link--active,
+.md-nav__item .md-nav__link--active {
+  font-weight: 600;
+  color: var(--md-default-fg-color);
+}
+
+/* ---- cards: light paper, 1px border, soft shadow ----------------------- */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+  background: var(--ed-surface);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 2px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 200ms var(--ed-ease), box-shadow 200ms var(--ed-ease), border-color 200ms var(--ed-ease);
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid > .card:hover {
+  border-color: var(--ed-rule);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.md-typeset .grid.cards > ul > li > hr {
+  border-bottom: 2px solid var(--ed-rule);
+  width: 40px;
+  margin: 0.6rem 0 0.8rem;
+}
+
+/* ---- buttons: the bordered CTA box ------------------------------------- */
+.md-typeset .md-button {
+  border: 3px solid var(--ed-rule);
+  border-radius: 0;
+  color: var(--md-default-fg-color);
+  font-weight: 700;
+  padding: 0.6em 1.6em;
+  transition: transform 200ms var(--ed-ease), background-color 200ms var(--ed-ease);
+}
+
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus {
+  background-color: var(--ed-warm);
+  border-color: var(--ed-rule);
+  color: var(--ed-ink);
+  transform: translateY(-1px);
+}
+
+.md-typeset .md-button:active {
+  transform: translateY(1px);
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--ed-warm);
+  color: var(--ed-ink);
+}
+
+/* ---- images, code, admonitions, tables ---------------------------------- */
+.md-typeset img {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.md-typeset .twemoji svg,
+.md-typeset img.twemoji {
+  border: 0;
+  box-shadow: none;
+}
+
+.md-typeset code {
+  border-radius: 2px;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 2px;
+  box-shadow: none;
+  background: var(--ed-surface);
+}
+
+.md-typeset table:not([class]) {
+  border-radius: 0;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--ed-surface);
+  border-bottom: 2px solid var(--ed-rule);
+}
+
+.md-typeset .tabbed-labels > label {
+  font-family: var(--ed-ui-font);
+  font-weight: 500;
+}
+
+/* ---- footer: ink block ------------------------------------------------- */
+/* set explicitly on the footer elements: the theme's palette CSS overrides
+   --md-footer-* when they are only defined on the colour scheme */
+.md-footer,
+.md-footer-meta {
+  --md-footer-fg-color: var(--ed-cream);
+  --md-footer-fg-color--light: rgba(245, 243, 238, 0.75);
+  --md-footer-fg-color--lighter: rgba(245, 243, 238, 0.6);
+  --md-typeset-a-color: var(--ed-cream);
+}
+
+.md-footer-meta .md-copyright__highlight {
+  color: rgba(245, 243, 238, 0.75);
+}
+
+html body .md-footer-meta .md-social .md-social__link,
+html body .md-footer-meta.md-typeset a {
+  color: rgba(245, 243, 238, 0.8);
+  text-decoration: none;
+}
+
+html body .md-footer-meta .md-social .md-social__link:hover {
+  color: var(--ed-brown);
+}
+
+.md-footer {
+  background-color: var(--ed-ink);
+  color: var(--ed-cream);
+}
+
+.md-footer-meta,
+.md-footer-meta.md-typeset {
+  background-color: #111111;
+  color: rgba(245, 243, 238, 0.7);
+  border-top: 1px solid rgba(245, 243, 238, 0.12);
+}
+
+.md-footer__link,
+.md-footer__title,
+.md-footer__direction,
+.md-footer .md-social__link,
+.md-copyright {
+  color: var(--ed-cream);
+}
+
+.md-footer .md-social__link:hover {
+  color: var(--ed-brown);
+}
+
+/* ---- motion: subtle fade-up of content on load ------------------------ */
+@media (prefers-reduced-motion: no-preference) {
+  .md-content__inner {
+    animation: ed-fade-up 420ms var(--ed-ease) both;
+  }
+}
+
+@keyframes ed-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---- timeline: Markdown list inside <div class="timeline" markdown> ---- */
+.md-typeset .timeline > ul {
+  list-style: none;
+  margin: 2rem 0 0 0;
+  padding: 0 0 0 1.6rem;
+  border-left: 2px solid var(--ed-rule);
+  max-width: 72ch;
+}
+
+.md-typeset .timeline > ul > li {
+  position: relative;
+  margin: 0 0 1.3rem 0;
+  padding-left: 0.4rem;
+  list-style: none;
+}
+
+/* a dot on the rule for every entry */
+.md-typeset .timeline > ul > li::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.6rem - 6px);
+  top: 0.45em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--md-default-bg-color);
+  border: 2px solid var(--ed-rule);
+}
+
+.md-typeset .timeline > ul > li:first-child::before {
+  background: var(--ed-brown);
+  border-color: var(--ed-brown);
+}
+
+/* the year range reads as a small-caps label */
+.md-typeset .timeline > ul > li > strong:first-child {
+  display: block;
+  font-family: var(--ed-ui-font);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--md-accent-fg-color);
+}

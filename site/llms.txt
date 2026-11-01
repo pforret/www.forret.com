@@ -1,0 +1,24 @@
+# Peter Forret
+
+> Tech consultant and entrepreneur — founder of DCProof and toolstud.io
+
+## Docs
+
+- [Home](<https://www.forret.com/index.md>)
+- [CV](<https://www.forret.com/about/cv/index.md>)
+- [About](<https://www.forret.com/about/index.md>)
+- [Timeline](<https://www.forret.com/about/timeline/index.md>)
+
+## Portfolio
+
+- [bashew](<https://www.forret.com/portfolio/bashew/index.md>)
+- [DCProof](<https://www.forret.com/portfolio/dcproof/index.md>)
+- [Portfolio](<https://www.forret.com/portfolio/index.md>)
+- [Open source](<https://www.forret.com/portfolio/opensource/index.md>)
+- [toolstud.io](<https://www.forret.com/portfolio/toolstudio/index.md>)
+
+## Blog
+
+- [My first JetBrains plugin, in a language I don't know](<https://www.forret.com/blog/2025/09/my-first-jetbrains-plugin-in-a-language-i-dont-know/index.md>)
+- [Four visions of the AI decade](<https://www.forret.com/blog/2026/07/four-visions-of-the-ai-decade/index.md>)
+- [One pass. Every age rating.](<https://www.forret.com/blog/2026/10/one-pass-every-age-rating/index.md>)

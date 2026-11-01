@@ -1,0 +1,433 @@
+# Peter Forret
+
+> Tech consultant and entrepreneur — founder of DCProof and toolstud.io
+
+# Docs
+
+# Peter Forret
+
+**CTO, software architect and entrepreneur.** Innovating cinema advertising technology since 2006.
+
+**Since 2024, A.I. is at the centre of my work**, in two ways:
+
+- **A.I. for software development:** I build software together with A.I. coding agents like Claude Code, from RPA automation, to design systems and developer tooling.
+- **A.I. for media processing:** video, speech and language models that analyse trailers, ads and news: automated quality control and age rating ([DCProof](<https://www.forret.com/portfolio/dcproof/index.md>)), media processing and admissions forecasting.
+
+Before that: three decades of software architecture, from PKI and digital notarisation to cinema advertising technology. Technical Director at Brightfish, founder of [DCProof](<https://www.forret.com/portfolio/dcproof/index.md>), and the author of a pile of open-source Bash tools.
+
+- [Portfolio](<https://www.forret.com/portfolio/index.md>): DCProof, toolstud.io, bashew and my open-source projects
+- [About me](<https://www.forret.com/about/index.md>): bio, [CV](<https://www.forret.com/about/cv/index.md>) and [timeline](<https://www.forret.com/about/timeline/index.md>)
+- [Blog](<https://www.forret.com/blog/index.md>)
+
+# CV
+
+**Peter Forret**: CTO, software architect · Grimbergen, Belgium · born 1969 in Roeselare · [peter@forret.com](<mailto:peter@forret.com>) · [LinkedIn](<https://www.linkedin.com/in/peterforret/>)
+
+**Since 2024 focused on A.I.**: A.I.-assisted software development (Claude Code and coding agents) and A.I. for media processing (video, speech and language models for quality control, age rating, news analysis and forecasting).
+
+Specialised in A.I. (audio/video quality control, forecasting, MCP services); (web) application architecture, product requirements and technical writing; microservices, DevOps, automation, PKI and security; audio, video and image processing. I take products from product management and software architecture all the way to implementation.
+
+## Experience
+
+### DCProof · Founder
+
+**2026–now**
+
+- Building DCProof, AI-powered quality and content control for trailers and ads: three AI models (video, speech, language) rate a trailer or ad for Kijkwijzer, FSK, BBFC and MPAA in one pass, and every rating explains what was detected, where and why. [More on DCProof](<https://www.forret.com/portfolio/dcproof/index.md>)
+
+### Brightfish nv · Technical Director
+
+**2006–now**
+
+- Responsible for software development for planning and operations
+- Developed A.I.-assisted applications for news analysis, media processing and admissions forecasting (2024–now)
+- Designed a microservice architecture to facilitate the migration to a new SaaS (2020–2023)
+- Designed and developed data analysis, visualisation and forecast tools (2017–2019)
+- Designed and developed a DCP content creation and distribution suite (2011–2017)
+
+### forret.com BV · Owner
+
+**2000–now**
+
+- Management and technology consultancy
+- Event and portrait photography
+
+### Hypertrust nv · CTO &amp; co-founder
+
+**2000–2005**
+
+- Designed secure PKI-based digital notarisation products
+- Developed the first digital registered mail application in Belgium
+
+### Belsign/Globalsign nv · VP Operations
+
+**1998–2000**
+
+- Product manager for PKI authentication and notarisation
+- Built and operated an accredited dedicated PKI data center
+
+### Keyware Technologies nv · Business Development Manager
+
+**1997–1998**
+
+- Biometric security solutions
+
+### Sopres Marketing SA · Database Developer
+
+**1993–1997**
+
+- Marketing databases and direct marketing services
+
+## Side projects
+
+| Years | Project | What |
+| --- | --- | --- |
+| 2020–now | Bashful Scripting | Newsletter, podcast and headlines on bash scripting; the [bashew](<https://www.forret.com/portfolio/bashew/index.md>) micro-framework |
+| 2006–now | [toolstud.io](<https://www.forret.com/portfolio/toolstudio/index.md>) | Web-based tools, calculators and converters (ad-supported, strong SEO) |
+| 2004–now | [blog.forret.com](<https://blog.forret.com/>) | Personal blog on technology and cultural topics |
+| 2013–2014 | be-tango | Tango teacher for beginners' courses |
+| 2011–2018 | [www.tangopaparazzo.com](<http://www.tangopaparazzo.com>) | Tango photography across EMEA |
+| 2007–2016 | [www.milonga.be](<http://www.milonga.be>) | Calendar and photos for Belgian Argentine tango dancers |
+| 2007–2015 | [www.brusselblogt.be](<http://www.brusselblogt.be>) | City blog for Flemish people in Brussels |
+
+## Education
+
+### Postgrad Economics · K.U.Leuven
+
+**1995–1996**
+
+### Master of Science (burg.ir.) · K.U.Leuven
+
+**1987–1992**
+
+- Computer science and mechatronics, thesis on robotics
+
+# About
+
+[![Peter Forret](<https://www.forret.com/about/img/peter.jpg>)](<https://www.forret.com/about/img/peter.jpg>)
+
+**Innovating cinema advertising technology since 2006.**
+
+I'm Peter Forret: CTO, software architect and entrepreneur. I take products from product management and software architecture all the way to implementation. Today I'm Technical Director at Brightfish, and in 2026 I started building [DCProof](<https://www.forret.com/portfolio/dcproof/index.md>).
+
+## A.I. first, since 2024
+
+For the last two years, A.I. has been at the heart of almost everything I build:
+
+- **A.I. for software development:** I work with A.I. coding agents (Claude Code) every day: they write, run and fix code with me. One example: record a browser task once, and Claude Code turns it into a tested Playwright script exposed as an API.
+- **A.I. for media processing:** at Brightfish I build A.I.-assisted applications for news analysis, media processing and admissions forecasting. With DCProof, video, speech and language models rate a trailer or ad for Kijkwijzer, FSK, BBFC and MPAA in one pass, and explain every rating.
+
+## What I work on
+
+- **A.I.:** A.I.-assisted software development, audio/video quality control, forecasting, MCP services
+- **(Web) application architecture:** product requirements and technical writing
+- **Microservices, DevOps and automation:** PKI and security
+- **Audio, video and image processing**
+
+## Where to find me
+
+- Based in Grimbergen, Belgium. Available for remote work or work within Belgium.
+- [peter@forret.com](<mailto:peter@forret.com>)
+- [LinkedIn](<https://www.linkedin.com/in/peterforret/>) · [GitHub](<https://github.com/pforret>) · [blog.forret.com](<https://blog.forret.com/>) · [cv.forret.com](<https://cv.forret.com/>)
+
+- **CV**
+
+  ---
+
+  Experience, side projects and education, from Sopres (1993) to DCProof (2026).
+- **Timeline**
+
+  ---
+
+  Three decades of PKI, cinema advertising tech and A.I. on one page.
+- **Portfolio**
+
+  ---
+
+  DCProof, toolstud.io, bashew and my open-source projects.
+
+# Timeline
+
+Three decades at a glance: from marketing databases and PKI to cinema advertising technology and A.I. The details are in the [CV](<https://www.forret.com/about/cv/index.md>).
+
+- **2026–now** Founder of [DCProof](<https://www.forret.com/portfolio/dcproof/index.md>): AI age rating and quality control for trailers and ads
+- **2024–now** A.I. first: software development with A.I. coding agents (Claude Code), and A.I.-assisted applications for news analysis, media processing and admissions forecasting at Brightfish
+- **2020–now** Bashful Scripting: newsletter, podcast and the [bashew](<https://www.forret.com/portfolio/bashew/index.md>) framework
+- **2020–2023** Microservice architecture for the migration to a new SaaS at Brightfish
+- **2017–2019** Data analysis, visualisation and forecast tools at Brightfish
+- **2011–2017** DCP content creation and distribution suite at Brightfish
+- **2006–now** Technical Director at Brightfish, and [toolstud.io](<https://www.forret.com/portfolio/toolstudio/index.md>) goes live
+- **2004–now** [blog.forret.com](<https://blog.forret.com/>)
+- **2000–2005** CTO &amp; co-founder of Hypertrust: the first digital registered mail application in Belgium
+- **2000–now** Owner of forret.com BV: consultancy and photography
+- **1998–2000** VP Operations at Belsign/Globalsign: an accredited PKI data center
+- **1997–1998** Business Development Manager at Keyware Technologies: biometric security
+- **1993–1997** Database Developer at Sopres Marketing
+- **1987–1996** K.U.Leuven: Master of Science (burg.ir.), then postgrad Economics
+
+# Portfolio
+
+# bashew
+
+**Role:** Author · **Code:** [github.com/pforret/bashew](<https://github.com/pforret/bashew>) · ⭐ my most-starred GitHub project
+
+bashew is a Bash script micro-framework. It takes you from a small stand-alone script to a complete project with CI/CD and testing. Most of my [open-source tools](<https://www.forret.com/portfolio/opensource/index.md>) are built on it.
+
+## Three ways to start
+
+```bash
+bashew.sh script    # a new stand-alone script with option parsing and colour output
+bashew.sh project   # a new script project in its own folder, with README
+bashew init         # initialise a bashew-based repo you just cloned, with CI/CD
+```
+
+## Features
+
+**Self-contained**
+
+All code lives in a single file, with no external dependencies. It comes with `README.md`, `CHANGELOG.md` and other Markdown files. You only edit `Script:main()` and your own functions; the template code sits at the end of the script.
+
+**Option parsing**
+
+Flags, options and parameters are defined in one place. The usage text and short and long option parsing are generated from that definition.
+
+**Function library**
+
+`IO:` functions with smart colour handling (no colours when piped), `Str:` for string manipulation, `Os:` for checks such as required programs.
+
+**Batteries included**
+
+Reads multiple `.env` files, has `--quiet` and `--verbose` modes, temp and log folders with automatic cleanup, correct script-folder detection (resolves symbolic links), and GitHub CI/CD with shellcheck.
+
+# DCProof
+
+**Role:** Founder · **Website:** [www.dcproof.net](<https://www.dcproof.net>)
+
+[![DCProof](<https://www.forret.com/portfolio/img/dcproof.png>)](<https://www.forret.com/portfolio/img/dcproof.png>)
+
+DCProof is an automated, AI-powered quality-control and content-control service for short-form media. Submit a spot or trailer, and minutes later you get a report: every frame and every second of audio is analysed.
+
+It covers cinema, TV, out-of-home, radio, social media ads (YouTube, Instagram, TikTok) and film trailers.
+
+## Products
+
+**[DCProof QC Report](<https://www.dcproof.net/products/qc-report/>)**
+
+A quality- and content-control report for each video, delivered as a PDF and as a JSON data blob. Videos are submitted through the API or a submit-URL.
+
+**[DCProof Rating Tool](<https://www.dcproof.net/products/rating-tool/>)**
+
+A web app for age rating. Reviewers jump between timecoded moments and check them against market standards such as FSK, BBFC, Kijkwijzer and GoedGezien, then record their decision.
+
+# Portfolio
+
+Products I founded, and the open-source tools I build along the way.
+
+- **DCProof**
+
+  ---
+
+  Automated, AI-powered quality and content control for short-form media: every frame and every second of audio of a spot or trailer, checked in minutes.
+- **toolstud.io**
+
+  ---
+
+  Free web-based calculators, converters and other tools for webmasters, musicians, photographers and videographers.
+- **bashew**
+
+  ---
+
+  Bash script micro-framework: from a small stand-alone script to a complete project with CI/CD and testing. My most popular open-source project.
+- **Open source**
+
+  ---
+
+  Bash frameworks, sysadmin and macOS helpers, media and AI tools: my GitHub projects, grouped by theme.
+
+# Open source on GitHub
+
+A selection of my [public GitHub repositories](<https://github.com/pforret?tab=repositories>): every original (non-fork) project with at least 5 , grouped by theme. Most of them are Bash tools built on [bashew](<https://www.forret.com/portfolio/bashew/index.md>).
+
+## Bash frameworks &amp; tools
+
+- **[bashew](<https://github.com/pforret/bashew>)** · 297 · `Shell`  
+  bash script micro-framework - from small stand-alone script to complex projects with CI/CD and testing
+- **[LearnBashQuickly](<https://github.com/pforret/LearnBashQuickly>)** · 37  
+  Learn Bash scripting in 27 minutes
+- **[setver](<https://github.com/pforret/setver>)** · 26 · `Shell`  
+  Easy semver tool -- get/set package version from git tags (Github/Bitbucket/Gitlab), composer.json (PHP), package.json (npm) ·
+- **[progressbar](<https://github.com/pforret/progressbar>)** · 25 · `Shell`  
+  Easy, clever progress bar for (bash) scripts
+- **[note](<https://github.com/pforret/note>)** · 9 · `Shell`  
+  Manage your notes, todo, ... with this nifty script CLI/bash
+- **[rexec](<https://github.com/pforret/rexec>)** · 9 · `Shell`  
+  repeat a command and be alerted when the output changes
+- **[shlorem](<https://github.com/pforret/shlorem>)** · 7 · `Shell`  
+  Lorem Ipsum generator for the command line (pure bash)
+- **[shtext](<https://github.com/pforret/shtext>)** · 7 · `Shell`  
+  Text manipulation in bash, by always using the fastest method
+- **[awk-boilerplate](<https://github.com/pforret/awk-boilerplate>)** · 6 · `Awk`  
+  A template script for larger AWK/GAWK projects ·
+- **[shini](<https://github.com/pforret/shini>)** · 6 · `Shell`  
+  Bash/shell .INI parser
+- **[shwordle](<https://github.com/pforret/shwordle>)** · 6 · `Shell`  
+  Wordle (bash/CLI) with variable \# of letters and multiple languages
+- **[bash\_benchmarks](<https://github.com/pforret/bash_benchmarks>)** · 5 · `Shell`  
+  Benchmarks to test different methods for string, file, process manipulation, ... ·
+
+## Sysadmin, network &amp; macOS
+
+- **[m1\_homebrew](<https://github.com/pforret/m1_homebrew>)** · 56 · `Shell`  
+  Install homebrew in native mode on Apple MacOS ARM (M1)
+- **[crontask](<https://github.com/pforret/crontask>)** · 32 · `Shell`  
+  Use to call scripts or URLs from a crontab file, with optional logging and webhook upon success/failure
+- **[glennr-unifi](<https://github.com/pforret/glennr-unifi>)** · 26 · `Shell`  
+  Ubiquiti install scripts from glennr.nl
+- **[wp\_cleanup](<https://github.com/pforret/wp_cleanup>)** · 15 · `Shell`  
+  Script to clean up infected WordPress installations
+- **[bumpkeys](<https://github.com/pforret/bumpkeys>)** · 10 · `Shell`  
+  Upgrade your SSH keys for better security
+- **[font](<https://github.com/pforret/font>)** · 6 · `Shell`  
+  Manage installed fonts from CLI (Linux/MacOS)
+- **[ghlookup](<https://github.com/pforret/ghlookup>)** · 5 · `Shell`  
+  Get info on Github repositories via API in bash CLI
+- **[landeploy](<https://github.com/pforret/landeploy>)** · 5 · `Shell`  
+  automatic deploy on LAN/localhost upon 'git push'
+- **[netcheck](<https://github.com/pforret/netcheck>)** · 5 · `Shell`  
+  test network: interfaces, gateway, router, internet (bash script)
+- **[WinAdmin](<https://github.com/pforret/WinAdmin>)** · 5 · `Batchfile`  
+  Windows Admin Tools
+
+## Media &amp; AI
+
+- **[shmixcloud](<https://github.com/pforret/shmixcloud>)** · 9 · `Shell`  
+  Download Mixcloud shows and add album art to m4a files
+- **[splashmark](<https://github.com/pforret/splashmark>)** · 9 · `Shell`  
+  Download/create (unsplash/pixabay/replicate) pics and resize/add effects/add attribution/watermark/... ·
+- **[m1fusion](<https://github.com/pforret/m1fusion>)** · 8 · `Shell`  
+  Stable Diffusion install/uninstall/prompt for MacOS M1
+
+## Docs &amp; developer tooling
+
+- **[mkdox](<https://github.com/pforret/mkdox>)** · 5 · `Shell`  
+  create and run Mkdocs Material websites using Docker image
+- **[PeakClaude](<https://github.com/pforret/PeakClaude>)** · 5 · `HTML`  
+  simple real-time tracker that shows whether Claude Code is currently in peak or off-peak hours ·
+
+# toolstud.io
+
+**Role:** Founder · **Website:** [toolstud.io](<https://toolstud.io>)
+
+[![toolstud.io](<https://www.forret.com/portfolio/img/toolstudio.jpg>)](<https://www.forret.com/portfolio/img/toolstudio.jpg>)
+
+toolstud.io is a collection of free web-based calculators, converters and other tools, and one of my oldest projects.
+
+## Tools by audience
+
+- [Bandwidth converter](<https://toolstud.io/data/bandwidth.php>): GB/month, Mbps, MB/hour
+- [Megapixel calculator](<https://toolstud.io/photo/megapixel.php>): image size for TIF, BMP, JPG and PNG, plus aspect ratio
+- [HTTPS config check](<https://toolstud.io/network/https.php>)
+- [HTTP redirection check](<https://toolstud.io/network/redirect.php>)
+
+- [BPM calculator](<https://toolstud.io/music/bpm.php>): BPM to milliseconds
+- [Audio delay calculator](<https://toolstud.io/music/delay.php>)
+- [Musical frequency calculator](<https://toolstud.io/music/hertz.php>): notes and Hz
+
+- [Aspect ratio calculator](<https://toolstud.io/photo/aspect.php>)
+- [Video file-size calculator](<https://toolstud.io/video/filesize.php>)
+- [Video frame-rate conversion](<https://toolstud.io/video/framerate.php>)
+- [Depth-of-field calculator](<https://toolstud.io/photo/dof.php>)
+
+# Blog
+
+# My first JetBrains plugin, in a language I don't know
+
+[![Creating my first JetBrains plugin with Junie and Kotlin](<https://www.forret.com/blog/posts/img/llm-brains-jetbrains-plugin.jpg>)](<https://www.forret.com/blog/posts/img/llm-brains-jetbrains-plugin.jpg>)
+
+> TL;DR: I created a Jetbrains plugin in Kotlin, a language I don't master, with Jetbrains' own Junie AI Agent. It went quite easy, and now I have my first published plugin in the Jetbrains marketplace.
+
+## The itch
+
+I run Claude Code inside PhpStorm, with a button that opens a Claude Code terminal. I wanted two things on top of that: terminals that are easy to recognise by their title, and the same one-click start for the other terminal coding agents, like Codex CLI and Gemini CLI.
+
+The catch: JetBrains plugins are written in **Kotlin**, against the **JetBrains SDK**. I'm at home in bash, PHP, Go and Python, but I had never touched either of these.
+
+## Two coding agents, two outcomes
+
+**Codex CLI** went first. It produced a lot of code and a handy Docker-based Gradle build, so I didn't have to install a Java SDK. But the build fought obsolete methods and missing dependencies, and when I finally installed the plugin, the button showed up but did nothing. Hard to debug when you don't really understand the code.
+
+**Junie**, JetBrains' own coding agent, did much better. I kept the build scripts and restarted from the source. Junie knew its way around the JetBrains SDK, produced working code, and worked through the deprecation warnings from the Marketplace review (it took a few rounds). It also added the logo to the button and the Marketplace listing.
+
+## The result
+
+**LLM Brains** is a JetBrains plugin that opens any LLM coding agent in a terminal: Claude, Codex, Gemini and more.
+
+- Source: [toolstud-io/LlmBrains](<https://github.com/toolstud-io/LlmBrains>)
+- [LLM Brains on the JetBrains Marketplace](<https://plugins.jetbrains.com/plugin/28522-llm-brains>)
+
+My first JetBrains plugin, in a language I don't know, with an SDK I don't know. For me that's what A.I.-assisted software development is about: the agent takes care of the unfamiliar parts, so you can build what you need.
+
+[Read the full story on blog.forret.com](<https://blog.forret.com/2025/2025-09-19/jetbrains-plugin-kotlin/>)
+
+*Header photo: Milad Fakurian on Unsplash, created with [splashmark](<https://github.com/pforret/splashmark>).*
+
+# Four visions of the AI decade
+
+[![Four visions of the AI decade](<https://www.forret.com/blog/posts/img/four-visions-of-the-ai-decade.jpg>)](<https://www.forret.com/blog/posts/img/four-visions-of-the-ai-decade.jpg>)
+
+> If you work in software, you've probably had the same weird couple of years I've had. You ask an LLM to fix a bug, it fixes the bug. You ask your coding agent to improve the architecture and performance of a complete app, and it does just that. Somewhere in the back of your head a voice asks: okay, but where does this actually go?
+
+At some point I got tired of getting my answer to that question from tweet threads and podcast hot takes, so I went to the source material: four documents and essay series with numbers, dates and claims that can be checked against 2026.
+
+| Vision | Source | In one line |
+| --- | --- | --- |
+| **Situational Awareness** | Leopold Aschenbrenner, June 2024 | AGI around 2027 from straight-line trends; *win* the race |
+| **AI 2027** | Kokotajlo, Alexander, Larsen, Lifland, Dean, April 2025 | A month-by-month scenario with two endings; *look closely* before accelerating |
+| **Machines of Loving Grace** &amp; **The Adolescence of Technology** | Dario Amodei, 2024–2026 | "A country of geniuses in a datacenter"; *steer* it |
+| **The Intelligence Age**, **The Gentle Singularity** &amp; **Abundant Intelligence** | Sam Altman, 2024–2025 | Superintelligence a few thousand days away; *build* it |
+
+In the full post I summarise each vision in ten key points, compare the two scenario documents, put all four side by side, and do a **reality check for mid-2026**: what's on track (coding agents, data center capex), what isn't yet, and how far behind the scenarios we actually are.
+
+The short version: the direction of travel hasn't been falsified on any major axis, but the timing seems to run later than the scenarios projected.
+
+[Read the full post on blog.forret.com](<https://blog.forret.com/2026/2026-07-04/four-visions-of-the-ai-decade/>)
+
+*Header photo: Drew Beamer on Unsplash, created with [splashmark](<https://github.com/pforret/splashmark>).*
+
+# One pass. Every age rating.
+
+In summer 2026 I started building [DCProof](<https://www.forret.com/portfolio/dcproof/index.md>), a toolkit for the DCP workflows of sales houses.
+
+But the market kept asking a different question: is this trailer or this ad fine for a 6-year-old, a 12-year-old, or only for adults?
+
+Today that answer comes from a rating agency that doesn't explain itself, or from gut feeling.
+
+A cartoon sword fight and a realistic stabbing are both "violence". They land in very different buckets.
+
+[![One pass, every age rating: watch, listen, map, explain, learn](<https://www.forret.com/blog/posts/img/one-pass-every-age-rating.png>)](<https://www.forret.com/blog/posts/img/one-pass-every-age-rating.png>)
+
+## Watch, listen, map
+
+So age rating became the focus, built around one method, "watch, listen, map":
+
+1. A **video model** watches the whole clip and returns timestamped observations.
+2. A **speech model** transcribes the dialogue for language checks.
+3. A **language model** maps each observation onto Kijkwijzer, FSK, BBFC and MPAA criteria.
+
+Claude Code built the whole workflow with me: the model calls, the timecodes that tie picture and dialogue together, the mapping onto each rating system.
+
+## Keeping it right is the work
+
+But the first rating is the easy part. Keeping it right is the work.
+
+So every rating system has its own evals: reference trailers and ads with a known rating. Markets judge differently: swearing that earns a Kijkwijzer language pictogram won't raise a Swedish rating. So the mapping prompt adapts per market, and the evals run again. Claude Code runs that loop with me: adjust, rerun, compare.
+
+Two years ago this would have been a research project. This summer it became three models and a working prototype.
+
+## No black box
+
+The part I am proudest of: none of it is a black box. Every rating comes with what was detected, where, and why it lands in that bucket for that system.
+
+One pass, every rating, and a reason for each.
+
+How does your team rate video today: an agency, gut feeling, or nothing? [Join the conversation on LinkedIn](<https://www.linkedin.com/feed/update/urn:li:activity:7518921701100015616/>)
