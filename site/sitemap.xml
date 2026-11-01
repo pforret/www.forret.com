@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      <url>
+        <loc>www.forret.test/</loc>
+      </url>
+      <url>
+        <loc>www.forret.test/about/</loc>
+      </url>
+      <url>
+        <loc>www.forret.test/blog/</loc>
+      </url>
+      <url>
+        <loc>www.forret.test/blog/posts/2024-01-post1/</loc>
+      </url>
+      <url>
+        <loc>www.forret.test/blog/posts/2024-02-post2/</loc>
+      </url>
+      <url>
+        <loc>www.forret.test/todo/zz-exclude-test/</loc>
+      </url>
+</urlset>
