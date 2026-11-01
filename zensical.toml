@@ -2,9 +2,13 @@
 
 [project]
 site_name = "www.forret Docs"
-site_url = "https://www.forret.test/"
+site_url = "https://www.forret.com/"
 site_description = "www.forret Docs by pforret"
 copyright = "&copy; 2026 www.forret Docs &bull; pforret &bull; built with mkdox v2.2.1"
+# keep internal folders out of the published site/ (gitignore-style, relative to docs/)
+exclude_docs = """
+/todo/
+"""
 
 [project.theme]
 name = "material"

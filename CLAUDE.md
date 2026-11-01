@@ -23,11 +23,17 @@ docker run --platform linux/amd64 --rm -v "$PWD":/docs pforret/mkdox-zensical bu
 
 There are no tests or linters. A change is verified when the build finishes without problems and the pages in `site/` look right.
 
-**Zensical version:** `pforret/mkdox-zensical` (built 2026-02-28) ships Zensical 0.0.24, which ignores `exclude_docs`. Zensical 0.0.74 handles it. Until the image is rebuilt with a newer Zensical, excluded folders such as `docs/todo/` still end up in `site/`.
+**Zensical version:** `exclude_docs` needs a recent Zensical (0.0.74 works, 0.0.24 ignored it). If excluded pages show up in `site/`, run `docker pull pforret/mkdox-zensical`.
 
 ## Publishing
 
 The site is built locally, not in CI. `mkdox2 build` writes the HTML to `site/`, that folder is committed, and GitHub serves it as the website. There is no build step on GitHub.
+
+- `.github/workflows/pages.yml` runs on every push to `main` that changes `site/**` (it can also be started by hand). It uploads `site/` unchanged to GitHub Pages. The Pages source is set to "GitHub Actions". Never add a build step there.
+- Because `mkdox2 build` commits and pushes, **every build publishes the site**. For a test build that doesn't commit, use the plain `docker run ... build` command shown above.
+- Pushing changes to `docs/` without rebuilding publishes nothing new. Rebuild first.
+- Public URL: `https://www.forret.com/`, which is also `site_url` in `zensical.toml`. The repo is `pforret/www.forret.com` and its fallback address is `https://pforret.github.io/www.forret.com/`.
+- Custom domain, a one-time setup: DNS is at Gandi, with a `www` CNAME pointing to `pforret.github.io.`. Then run `gh api -X PUT repos/pforret/www.forret.com/pages -f cname=www.forret.com` and enforce HTTPS in the Pages settings. With deploys from Actions, a `CNAME` file in `site/` is ignored.
 
 ## Structure
 
